@@ -1,5 +1,3 @@
-// ConsoleApplication6.cpp : Defines the entry point for the console application.
-
 #include "stdafx.h"
 #include <iostream>
 #include <ctime>
@@ -20,18 +18,17 @@ int main(int argc, char* argv[])
 	cout << "Enter value of columns "<< endl;
 	cin >> m;
 
-	srand(time(0)); // генерация случайных чисел
-					// динамическое создание двумерного массива вещественных чисел на десять элементов
-	int **Array = new int*[n]; // две строки в массиве
+	srand(time(0));
+	int **Array = new int*[n]; 
 	
 	
 	for (int count = 0; count < n; count++)
-		Array[count] = new int[m]; // и пять столбцов
-										// заполнение массива
+		Array[count] = new int[m]; 
+										
 	for (int count_row = 0; count_row < n; count_row++)
 		for (int count_column = 0; count_column < m; count_column++)
-			Array[count_row][count_column] = (rand() % 100); //заполнение массива случайными числами с масштабированием от 1 до 10
-																							  // вывод массива
+			Array[count_row][count_column] = (rand() % 100); 
+																							  // ГўГ»ГўГ®Г¤ Г¬Г Г±Г±ГЁГўГ 
 	for (int count_row = 0; count_row < n; count_row++)
 	{
 		for (int count_column = 0; count_column < m; count_column++)
@@ -54,8 +51,8 @@ int main(int argc, char* argv[])
 
 	
 
-	// удаление двумерного динамического массива
-	for (int count = 0; count < 2; count++)
+	
+	for (int count = 0; count < n; count++)
 		delete[]Array[count];
 	system("pause");
 	return 0;
