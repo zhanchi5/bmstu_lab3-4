@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/zhanchi5/bmstu_lab3-4.svg?branch=master)](https://travis-ci.org/zhanchi5/bmstu_lab3-4)
 # bmstu_lab3-4
 
 
