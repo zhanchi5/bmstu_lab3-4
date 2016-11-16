@@ -13,5 +13,6 @@ double summary()
     summary += ielement;
 }
   while (ielement >= precision);
-  return summary;
+	double a = round(summary*10000)/10000;
+  return a;
 }
