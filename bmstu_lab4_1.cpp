@@ -7,15 +7,15 @@
 int main()
 {
 	srand(time(0));
-        double *lMassive;
+        double *Massive;
         int n; 
         std::cout << "Enter size of array" <<std::endl;
         std::cin >> n;
-        lMassive = (double *)malloc(n*sizeof(double));
+        Array = (double *)malloc(n*sizeof(double));
         for (int i=0; i<n; i++)
         {
-                lMassive[i] = rand() %100;
-                std::cout << "a["<<i<<"]="<<lMassive[i] << std::endl;
+                Array[i] = rand() %100;
+                std::cout << "a["<<i<<"]="<<Array[i] << std::endl;
         }
 
 
@@ -23,13 +23,13 @@ int main()
           int p=1;
           for (int i=1; i<n; i+=2)
           {
-            p*=lMassive[i];
+            p*=Array[i];
           }
 
           std::cout << "answer: " << p << std::endl;
 
 
 
-        free(lMassive);
+        free(Array);
         system("Pause");
 }
