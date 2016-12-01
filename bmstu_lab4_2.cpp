@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	for (unsigned int count_row = 0; count_row < n; ++count_row)
 		for (unsigned int count_column = 0; count_column < m; ++count_column)
 			Array[count_row][count_column] = (rand() % 100); 
-																							  // âûâîä ìàññèâà
+																							 
 	for (unsigned int count_row = 0; count_row < n; ++count_row)
 	{
 		for (unsigned int count_column = 0; count_column < m; ++count_column)
